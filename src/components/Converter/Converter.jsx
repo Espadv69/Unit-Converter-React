@@ -79,13 +79,13 @@ const Converter = () => {
         </select>
       </div>
 
+      <button onClick={handleConvert}>Convert</button>
+
       {error && (
         <p style={{ color: 'red', textAlign: 'center', fontSize: '16px' }}>
           {error}
         </p>
       )}
-
-      <button onClick={handleConvert}>Convert</button>
 
       {result && <p>Result: {result}</p>}
     </section>
