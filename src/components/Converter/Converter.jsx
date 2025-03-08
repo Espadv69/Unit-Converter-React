@@ -26,7 +26,7 @@ const Converter = () => {
   }
 
   return (
-    <section className="converter-section">
+    <section className="converter">
       <input
         type="number"
         value={inputValue}
@@ -56,8 +56,8 @@ const Converter = () => {
           <option value="yd">Yards (yd)</option>
           <option value="mi">Miles (mi)</option>
         </select>
-        <button onClick={handleConvert}>Convert</button>
       </div>
+        <button onClick={handleConvert}>Convert</button>
       {result && <p>Result: {result}</p>}
     </section>
   )
