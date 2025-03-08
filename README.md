@@ -60,4 +60,4 @@ To run this project locally, follow these steps:
 
 ## Live Demo
 
-soon...
+[Link to live demo (https://unit-converter-espadv.netlify.app/)]
