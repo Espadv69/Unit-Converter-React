@@ -1,6 +1,7 @@
 # Unit Converter
 
 A simple and intuitive unit converter built with React and Vite. This application allows users to convert between various units of measurement, including length, weight, temperature, and more. Easily input values, select the desired units, and get instant conversion results. Perfect for quick calculations and everyday use!
+
 <!-- ![Unit Converter Screenshot](./screenshot.png) -->
 
 ## Features
@@ -25,24 +26,27 @@ A simple and intuitive unit converter built with React and Vite. This applicatio
 To run this project locally, follow these steps:
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/Espadv69/Unit-Converter-React.git
    ```
 
 2. **Navigate to the project directory:**
-      ```bash
-     cd Unit-Converter-React
-     ```
+
+   ```bash
+   cd Unit-Converter-React
+   ```
 
 3. **Install dependencies:**
-     ```bash
-     npm install
-     ```
+
+   ```bash
+   npm install
+   ```
 
 4. **Run the development server:**
-     ```bash
-     npm run dev
-     ```
+   ```bash
+   npm run dev
+   ```
 
 ## Usage
 
