@@ -1,6 +1,5 @@
 .converter {
   min-width: 400px;
-  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -24,25 +23,36 @@
   font-size: 16px;
 }
 
-.selects {
-  display: flex;
-  gap: 10px;
+.converter .convers {
+  margin-bottom: 15px;
 }
 
-.converter select {
-  width: 48%;
+.converter .convers select {
+  width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
   background-color: #fff;
 }
 
-.converter span {
-  display: inline-block;
-  width: 4%;
-  text-align: center;
+.converter .selects {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.converter .selects select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.converter .selects span {
   font-size: 16px;
   color: #555;
 }
@@ -67,4 +77,10 @@
   margin-top: 15px;
   font-size: 18px;
   color: #333;
+}
+
+.converter p[style*="color: red"] {
+  color: red !important;
+  font-size: 16px;
+  margin-top: 10px;
 }
