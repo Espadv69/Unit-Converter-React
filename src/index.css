@@ -9,3 +9,9 @@
 body {
   font-family: 'Roboto Variable', sans-serif;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
