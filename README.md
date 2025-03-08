@@ -2,7 +2,7 @@
 
 A simple and intuitive unit converter built with React and Vite. This application allows users to convert between various units of measurement, including length, weight, temperature, and more. Easily input values, select the desired units, and get instant conversion results. Perfect for quick calculations and everyday use!
 
-<!-- ![Unit Converter Screenshot](./screenshot.png) -->
+![Unit Converter Screenshot](./public/screenshot.png)
 
 ## Features
 
