@@ -16,6 +16,11 @@ const Converter = () => {
   const [result, setResult] = useState('')
   const [error, setError] = useState('')
 
+  useEffect(() => {
+    setFromUnit(UNITS[conversionType][0])
+    setToUnit(UNITS[conversionType][1])
+  }, [conversionType])
+
   const handleConvert = () => {
     if (!inputValue || isNaN(inputValue)) {
       setError('Please enter a valid number')
