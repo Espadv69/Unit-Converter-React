@@ -8,7 +8,7 @@ const Converter = () => {
   const [fromUnit, setFromUnit] = useState('cm')
   const [toUnit, setToUnit] = useState('m')
   const [result, setResult] = useState('')
-  // toDo: Add error state
+  const [error, setError] = useState('')
 
   const handleConvert = () => {
     if (!inputValue || isNaN(inputValue)) {
