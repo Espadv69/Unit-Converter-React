@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import { convertLength } from '../../utils/convert'
+
 import './Converter.css'
 
 const Converter = () => {
   const [inputValue, setInputValue] = useState('')
-  const [frommUnit, setFromUnit] = useState('meters')
-  const [toUnit, setToUnit] = useState('kilometers')
+  const [frommUnit, setFromUnit] = useState('cm')
+  const [toUnit, setToUnit] = useState('m')
   const [result, setResult] = useState('')
   // toDo: Add error state
 
