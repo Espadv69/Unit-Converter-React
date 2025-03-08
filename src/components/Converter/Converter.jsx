@@ -23,6 +23,7 @@ const Converter = () => {
 
   const handleConvert = () => {
     if (!inputValue || isNaN(inputValue)) {
+      setResult('')
       setError('Please enter a valid number')
       return
     }
