@@ -12,7 +12,7 @@ const Converter = () => {
 
   const handleConvert = () => {
     if (!inputValue || isNaN(inputValue)) {
-      alert('Please enter a valid number.')
+      setError('Please enter a valid number')
       return
     }
 
@@ -22,6 +22,7 @@ const Converter = () => {
       toUnit,
     )
 
+    setError('')
     setResult(convertedValue.toFixed(2))
   }
 
@@ -57,7 +58,12 @@ const Converter = () => {
           <option value="mi">Miles (mi)</option>
         </select>
       </div>
-        <button onClick={handleConvert}>Convert</button>
+      {error && (
+        <p style={{ color: 'red', textAlign: 'center', fontSize: '18px' }}>
+          {error}
+        </p>
+      )}
+      <button onClick={handleConvert}>Convert</button>
       {result && <p>Result: {result}</p>}
     </section>
   )
