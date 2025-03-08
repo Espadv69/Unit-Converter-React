@@ -3,6 +3,11 @@ import { convertLength, convertWeight } from '../../utils/convert'
 
 import './Converter.css'
 
+const UNITS = {
+  length: ['cm', 'm', 'km', 'in', 'ft', 'yd', 'mi'],
+  weight: ['g', 'kg', 'lb', 'oz'],
+}
+
 const Converter = () => {
   const [inputValue, setInputValue] = useState('')
   const [conversionType, setConversionType] = useState('length')
@@ -10,11 +15,6 @@ const Converter = () => {
   const [toUnit, setToUnit] = useState(UNITS.length[1])
   const [result, setResult] = useState('')
   const [error, setError] = useState('')
-
-  const UNITS = {
-    length: ['cm', 'm', 'km', 'in', 'ft', 'yd', 'mi'],
-    weight: ['g', 'kg', 'lb', 'oz'],
-  }
 
   const handleConvert = () => {
     if (!inputValue || isNaN(inputValue)) {
