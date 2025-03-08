@@ -59,7 +59,7 @@ const Converter = () => {
         </select>
       </div>
       {error && (
-        <p style={{ color: 'red', textAlign: 'center', fontSize: '18px' }}>
+        <p style={{ color: 'red', textAlign: 'center', fontSize: '16px' }}>
           {error}
         </p>
       )}
