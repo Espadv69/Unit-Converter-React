@@ -22,7 +22,10 @@ const Converter = () => {
       return
     }
 
-    const convertedValue = convertLength(
+    const convertFunction =
+      conversionType === 'length' ? convertLength : convertWeight
+
+    const convertedValue = convertFunction(
       parseFloat(inputValue),
       fromUnit,
       toUnit,
