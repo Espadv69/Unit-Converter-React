@@ -37,6 +37,16 @@ const Converter = () => {
 
   return (
     <section className="converter">
+      <div className="convers">
+        <select
+          value={conversionType}
+          onChange={(e) => setConversionType(e.target.value)}
+        >
+          <option value="length">Length</option>
+          <option value="weight">Weight</option>
+        </select>
+      </div>
+
       <input
         type="number"
         value={inputValue}
