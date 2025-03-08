@@ -36,22 +36,27 @@ const Converter = () => {
 
       <div className="selects">
         <select value={fromUnit} onChange={(e) => setFromUnit(e.target.value)}>
-          <option value="meters">Meters</option>
-          <option value="kilometers">Kilometers</option>
-          <option value="miles">Miles</option>
-          <option value="feet">Feet</option>
-          <option value="inches">Inches</option>
+          <option value="cm">Centimeters (cm)</option>
+          <option value="m">Meters (m)</option>
+          <option value="km">Kilometers (km)</option>
+          <option value="in">Inches (in)</option>
+          <option value="ft">Feet (ft)</option>
+          <option value="yd">Yards (yd)</option>
+          <option value="mi">Miles (mi)</option>
         </select>
 
         <span>to</span>
 
         <select value={toUnit} onChange={(e) => setToUnit(e.target.value)}>
-          <option value="meters">Meters</option>
-          <option value="kilometers">Kilometers</option>
-          <option value="miles">Miles</option>
-          <option value="feet">Feet</option>
-          <option value="inches">Inches</option>
+          <option value="cm">Centimeters (cm)</option>
+          <option value="m">Meters (m)</option>
+          <option value="km">Kilometers (km)</option>
+          <option value="in">Inches (in)</option>
+          <option value="ft">Feet (ft)</option>
+          <option value="yd">Yards (yd)</option>
+          <option value="mi">Miles (mi)</option>
         </select>
+        <button onClick={handleConvert}>Convert</button>
       </div>
       {result && <p>Result: {result}</p>}
     </section>
