@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { convertLength, convertWeight } from '../../utils/convert'
 
 import './Converter.css'
@@ -6,8 +6,8 @@ import './Converter.css'
 const Converter = () => {
   const [inputValue, setInputValue] = useState('')
   const [conversionType, setConversionType] = useState('length')
-  const [fromUnit, setFromUnit] = useState('cm')
-  const [toUnit, setToUnit] = useState('m')
+  const [fromUnit, setFromUnit] = useState(UNITS.length[0])
+  const [toUnit, setToUnit] = useState(UNITS.length[1])
   const [result, setResult] = useState('')
   const [error, setError] = useState('')
 
@@ -56,33 +56,32 @@ const Converter = () => {
 
       <div className="selects">
         <select value={fromUnit} onChange={(e) => setFromUnit(e.target.value)}>
-          <option value="cm">Centimeters (cm)</option>
-          <option value="m">Meters (m)</option>
-          <option value="km">Kilometers (km)</option>
-          <option value="in">Inches (in)</option>
-          <option value="ft">Feet (ft)</option>
-          <option value="yd">Yards (yd)</option>
-          <option value="mi">Miles (mi)</option>
+          {UNITS[conversionType].map((unit) => (
+            <option key={unit} value={unit}>
+              {unit}
+            </option>
+          ))}
         </select>
 
         <span>to</span>
 
         <select value={toUnit} onChange={(e) => setToUnit(e.target.value)}>
-          <option value="cm">Centimeters (cm)</option>
-          <option value="m">Meters (m)</option>
-          <option value="km">Kilometers (km)</option>
-          <option value="in">Inches (in)</option>
-          <option value="ft">Feet (ft)</option>
-          <option value="yd">Yards (yd)</option>
-          <option value="mi">Miles (mi)</option>
+          {UNITS[conversionType].map((unit) => (
+            <option key={unit} value={unit}>
+              {unit}
+            </option>
+          ))}
         </select>
       </div>
+
       {error && (
         <p style={{ color: 'red', textAlign: 'center', fontSize: '16px' }}>
           {error}
         </p>
       )}
+
       <button onClick={handleConvert}>Convert</button>
+
       {result && <p>Result: {result}</p>}
     </section>
   )
