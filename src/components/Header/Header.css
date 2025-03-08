@@ -1,0 +1,18 @@
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-bottom: 1px solid #0056b3;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  color: #e6f2ff;
+}
