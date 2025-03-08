@@ -11,6 +11,11 @@ const Converter = () => {
   const [result, setResult] = useState('')
   const [error, setError] = useState('')
 
+  const UNITS = {
+    length: ['cm', 'm', 'km', 'in', 'ft', 'yd', 'mi'],
+    weight: ['g', 'kg', 'lb', 'oz'],
+  }
+
   const handleConvert = () => {
     if (!inputValue || isNaN(inputValue)) {
       setError('Please enter a valid number')
