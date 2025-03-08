@@ -84,3 +84,41 @@
   font-size: 16px;
   margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+  .converter {
+    min-width: 300px;
+  }
+
+  .converter h2 {
+    font-size: 1.5rem;
+  }
+
+  .converter input {
+    font-size: 14px;
+  }
+
+  .converter .convers select {
+    font-size: 14px;
+  }
+
+  .converter .selects select {
+    font-size: 14px;
+  }
+
+  .converter .selects span {
+    font-size: 14px;
+  }
+
+  .converter button {
+    font-size: 14px;
+  }
+
+  .converter p {
+    font-size: 16px;
+  }
+
+  .converter p[style*="color: red"] {
+    font-size: 14px;
+  }
+}
