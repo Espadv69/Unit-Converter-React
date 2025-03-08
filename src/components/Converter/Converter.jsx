@@ -1,11 +1,16 @@
 import { useState, useEffect } from 'react'
-import { convertLength, convertWeight } from '../../utils/convert'
+import {
+  convertLength,
+  convertWeight,
+  convertTemperature,
+} from '../../utils/convert'
 
 import './Converter.css'
 
 const UNITS = {
   length: ['cm', 'm', 'km', 'in', 'ft', 'yd', 'mi'],
   weight: ['g', 'kg', 'lb', 'oz'],
+  temperature: ['C', 'F', 'K'],
 }
 
 const Converter = () => {
