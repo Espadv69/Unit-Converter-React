@@ -69,6 +69,7 @@ const Converter = () => {
         >
           <option value="length">Length</option>
           <option value="weight">Weight</option>
+          <option value="temperature">Temperature</option>
         </select>
       </div>
 
