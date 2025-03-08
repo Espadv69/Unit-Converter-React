@@ -33,8 +33,22 @@ const Converter = () => {
       return
     }
 
-    const convertFunction =
-      conversionType === 'length' ? convertLength : convertWeight
+    let convertFunction
+
+    switch (conversionType) {
+      case 'length':
+        convertFunction = convertLength
+        break
+      case 'weight':
+        convertFunction = convertWeight
+        break
+      case 'temperature':
+        convertFunction = convertTemperature
+        break
+      default:
+        setError('Invalid conversion type')
+        return
+    }
 
     const convertedValue = convertFunction(
       parseFloat(inputValue),
