@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import { convertLength } from '../../utils/convert'
+import { convertLength, convertWeight } from '../../utils/convert'
 
 import './Converter.css'
 
 const Converter = () => {
   const [inputValue, setInputValue] = useState('')
+  const [conversionType, setConversionType] = useState('length')
   const [fromUnit, setFromUnit] = useState('cm')
   const [toUnit, setToUnit] = useState('m')
   const [result, setResult] = useState('')
